@@ -5,9 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CODEX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <button id="toggle" onclick="toggleDarkMode()" title="Toggle Day/Night mode">
+      <i class="fa-solid fa-sun" id="toggleIcons"></i> /
+      <i class="fa-solid fa-moon"></i>
+    </button>
     <div id="app">
       <div id="chat_container"></div>
       <form>
@@ -16,5 +22,13 @@
       </form>
     </div>
     <script type="module" src="/script.js"></script>
+    <script>
+      function toggleDarkMode() {
+        var element = document.getElementById('app');
+        element.classList.toggle("dark-mode");
+        // var icon = document.getElementById("toggleIcons").className;
+        // console.log(icon);
+      }
+    </script>
   </body>
 </html>

@@ -15,11 +15,11 @@ body {
   width: 100vw;
   height: 100vh;
   background: #343541;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 2em;
 }
 
 #chat_container {
@@ -45,12 +45,49 @@ body {
 }
 
 .wrapper {
-  width: 100%;
+  width: 80%;
   padding: 15px;
+  margin: 0px auto;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .ai {
   background: #40414F;
+}
+
+.ai:hover{
+  -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.false{
+  border-radius: 20px;
+  background: #40414F;
+}
+
+#toggle{
+  outline: 0;
+    border: 1px solid;
+    cursor: pointer;
+    background: #FFFFFF;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+.dark-mode {
+  background-color: white !important;
+  color: black !important;
+}
+
+.false:hover{
+  box-shadow: inset 18px 18px 25px #343540,
+    inset -18px -18px 25px #4c4d5e;
 }
 
 .chat {
